@@ -2,7 +2,15 @@
 
 ## Model parametrisation
 
-We train two [NequIP](https://github.com/mir-group/nequip) models using data from [Jansen *et al.*](https://doi.org/10.1103/PhysRevB.108.235122) One with a larger number of parameters for the $6 \times 6 \times 6$ supercell simulations and another with a smaller number of parameters for the 14x14x14 supercell simulations. Training input files and deployed models are given in [src](./src) folder.
+We train two [NequIP](https://github.com/mir-group/nequip) models using data from [Jansen *et al.*](https://doi.org/10.1103/PhysRevB.108.235122) One with a larger number of parameters for the $6 \times 6 \times 6$ supercell simulations and another with a smaller number of parameters for the 14x14x14 supercell simulations. Training input files and deployed models are given in [src](./src) folder. Parity plots showing energy and force RMSEs are included. Equation of state comparisons are provided for the first (low-T) and last (high-T) snapshots of the training dataset.
+
+<p align="center">
+<img src="./data/NequIP_models/parity_plot_full_nequip.png" width="1100">
+</p>
+
+<p align="center">
+<img src="./data/Equation_of_state/eos_comparison.png" width="1100">
+</p>
 
 ## Strain analysis
 
