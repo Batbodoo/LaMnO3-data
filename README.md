@@ -45,6 +45,14 @@ Correlation functions were calculated using vectors q($Q_2,Q_3$) for each octahe
 <img src="./data/Distortion_correlations/autocorr_gr_plot.svg" width="550">
 </p>
 
+## Velocity autocorrelation function convergence
+
+Velocity autocorrelation functions were calculated following [this method](https://www.vasp.at/wiki/Sampling_phonon_spectra_from_molecular-dynamics_simulations). Here, we show the power spectra from 10 ps and 40 ps runs at 800K
+
+<p align="center">
+<img src="./data/Autocorrelation_functions/scaled_scaled_weighted_power_spectrum_convergence_800K.png" width="550">
+</p>
+
 ## Single crystal diffuse scattering
 
 Single crystal diffuse scattering patterns were calculated using snapshots of the $14 \times 14 \times 14$ supercell at 1,000 K with [scatty](https://doi.org/10.1107/S2053273318015632). The inputs are given in the [src](./src) folder and the patterns are given in the [data](./data) folder. To note, the patterns are calculated with a cubic reciprocal lattice for simplification, since the reference unit cell and the supercells are pseudo-cubic.
