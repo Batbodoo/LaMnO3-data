@@ -37,20 +37,31 @@ We use the smooth trajectory function from [OVITO](https://doi.org/10.1088/0965-
 <img src="./data/Time-averaging/JT_percentage_1000K.png" width="550">
 </p>
 
-## Correlations of distortions at 1,000K
-
-Correlation functions were calculated using vectors q($Q_2,Q_3$) for each octahedron. $G(t)=<q_0\cdot q_t>_t$ is an autocorrelation function calculating the change in distortions through time, showing the fluctuation timescale is $\sim 40$ fs.
-
-<p align="center">
-<img src="./data/Distortion_correlations/autocorr_gr_plot.svg" width="550">
-</p>
-
 ## Velocity autocorrelation function convergence
 
 Velocity autocorrelation functions were calculated following [this method](https://www.vasp.at/wiki/Sampling_phonon_spectra_from_molecular-dynamics_simulations). Here, we show the power spectra from 10 ps and 40 ps runs at 800K
 
 <p align="center">
 <img src="./data/Autocorrelation_functions/scaled_scaled_weighted_power_spectrum_convergence_800K.png" width="550">
+</p>
+
+## Mode projection
+
+Velocities from 40 ps NVE runs at 800K were projected onto phonon modes at high symmetry points from which autocorrelation functions were calculated and averaged over 5 independent runs. Here, we show the autocorrelation function and power spectra of the cooperative Jahn-Teller mode (5th mode at the M q-point). The phonon mode is highly anharmonic and fitting a Lorentzian yields $\Gamma = 31.13$ meV which translates to 42 fs. Mode projection data are available in the [data](./data) folder.
+
+![M-5 Mode](./data/Mode_projection/M-5.gif)
+
+<p align="center">
+<img src="./data/Mode_projection/M-5_mode.png" width="1100">
+</p>
+
+
+## Correlations of distortions at 1,000K
+
+Correlation functions were calculated using vectors q($Q_2,Q_3$) for each octahedron. $G(t)=<q_0\cdot q_t>_t$ is an autocorrelation function calculating the change in distortions through time, showing the fluctuation timescale is $\sim 40$ fs.
+
+<p align="center">
+<img src="./data/Distortion_correlations/autocorr_gr_plot.svg" width="550">
 </p>
 
 ## Single crystal diffuse scattering
